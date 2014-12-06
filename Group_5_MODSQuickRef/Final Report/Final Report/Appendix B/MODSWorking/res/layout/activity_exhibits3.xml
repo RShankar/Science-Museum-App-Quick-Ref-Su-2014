@@ -1,0 +1,58 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context="fau.edu.mods.Exhibits"
+    tools:ignore="MergeRootFrame" 
+    android:background="@drawable/exhibits_background">
+
+    <ImageButton
+        android:id="@+id/imageHomeButton"
+        android:layout_width="102dp"
+        android:layout_height="76dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:background="@android:color/transparent"
+        android:onClick="openHome"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/home_button" />
+
+     <ImageButton
+         android:id="@+id/imageNextButton"
+         android:layout_width="102dp"
+         android:layout_height="76dp"
+         android:layout_alignParentBottom="true"
+         android:layout_alignParentRight="true"
+         android:adjustViewBounds="true"
+         android:background="@android:color/transparent"
+         android:onClick="openExhibits4"
+         android:scaleType="fitXY"
+         android:src="@drawable/next_button" />
+    
+     <ImageView
+         android:id="@+id/imageleatherBack"
+         android:layout_width="290dp"
+         android:layout_height="190dp"
+         android:layout_alignParentTop="true"
+         android:layout_centerHorizontal="true"
+         android:adjustViewBounds="true"
+         android:background="@android:color/transparent"
+         android:scaleType="fitXY"
+         android:src="@drawable/leather_back"/>
+
+     <TextView
+         android:id="@+id/textView1"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentLeft="true"
+         android:layout_centerVertical="true"
+         android:gravity="center"
+         android:text="The leatherback is the largest turtle--and one of the largest living reptiles--in the world. The leatherback is the only sea turtle that doesn&apos;t have a hard bony shell. A leatherback&apos;s top shell (carapace) is about 1.5 inches (4 cm) thick and consists of leathery, oil-saturated connective tissue overlaying loosely interlocking dermal bones. Their carapace has seven longitudinal ridges and tapers to a blunt point."
+         android:textSize="25dp" />
+     
+</RelativeLayout>
+

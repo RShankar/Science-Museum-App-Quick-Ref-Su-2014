@@ -1,0 +1,59 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context="fau.edu.mods.Exhibits"
+    tools:ignore="MergeRootFrame" 
+    android:background="@drawable/exhibits_background">
+
+     <ImageView
+         android:id="@+id/imageGreenTurtle"
+         android:layout_width="290dp"
+         android:layout_height="190dp"
+         android:layout_alignParentTop="true"
+         android:layout_centerHorizontal="true"
+         android:adjustViewBounds="true"
+         android:background="@android:color/transparent"
+         android:scaleType="fitXY"
+         android:src="@drawable/green_turtle" />
+
+     <ImageButton
+         android:id="@+id/imageNextButton"
+         android:layout_width="102dp"
+         android:layout_height="76dp"
+         android:layout_alignParentBottom="true"
+         android:layout_alignParentRight="true"
+         android:layout_alignTop="@+id/imageHomeButton"
+         android:adjustViewBounds="true"
+         android:background="@android:color/transparent"
+         android:onClick="openExhibits3"
+         android:scaleType="fitXY"
+         android:src="@drawable/next_button" />
+
+     <ImageButton
+         android:id="@+id/imageHomeButton"
+         android:layout_width="102dp"
+         android:layout_height="76dp"
+         android:layout_alignParentBottom="true"
+         android:layout_centerHorizontal="true"
+         android:adjustViewBounds="true"
+         android:background="@android:color/transparent"
+         android:onClick="openHome"
+         android:scaleType="fitXY"
+         android:src="@drawable/home_button" />
+
+     <TextView
+         android:id="@+id/textView1"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_below="@+id/imageGreenTurtle"
+         android:layout_centerHorizontal="true"
+         android:layout_marginTop="42dp"
+         android:textSize="25dp"
+         android:gravity="center"
+         android:text="The green turtle is a large, weighty sea turtle with a wide, smooth carapace, or shell. It inhabits tropical and subtropical coastal waters around the world and has been observed clambering onto land to sunbathe .Weighing up to 700 pounds (317.5 kilograms) green turtles are among the largest sea turtles in the world. Their proportionally small head, which is nonretractable, extends from a heart-shaped carapace that measures up to 5 feet (1.5 meters). Males are slightly larger than females and have a longer tail. Both have flippers that resemble paddles, which make them powerful and graceful swimmers." />
+
+</RelativeLayout>
+

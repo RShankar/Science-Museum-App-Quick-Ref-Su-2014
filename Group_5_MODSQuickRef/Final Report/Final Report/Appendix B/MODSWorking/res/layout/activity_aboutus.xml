@@ -1,0 +1,74 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/about_us_background"
+    android:orientation="vertical"
+    tools:context="fau.edu.mods.Aboutus"
+    tools:ignore="MergeRootFrame" >
+   
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="169dp"
+        android:textSize="25dp"
+        android:gravity="center"
+        android:text="Who We Are \n \n
+We are amateur app designers in a group of three consisting of a manager, an artist, and a java 
+programmer. Together we have created our first app ever within less than a week of time. 
+Bringing our skills from three different areas, we aim to make MODs more attractive to all visitors
+ with our app. \n \n
+Loc Tran: Manger and Artist \n 
+Kareem Hunte: Java Programmer \n
+Vincenzo D’Auria: Artist \n
+Assistants with app: All TAs and classmates \n
+Links used for information in “Exhibits”: \n
+" />
+
+      <ImageButton
+          android:id="@+id/imageButton2"
+          android:layout_width="600dp"
+          android:layout_height="50dp"
+          android:layout_above="@+id/imageButton1"
+          android:layout_alignParentRight="true"
+          android:background="@android:color/transparent"
+          android:onClick="openSecondLink"
+          android:src="@drawable/second_link" />
+
+      <ImageButton
+          android:id="@+id/imageButton1"
+          android:layout_width="600dp"
+          android:layout_height="50dp"
+          android:layout_above="@+id/imageButton3"
+          android:layout_alignParentRight="true"
+          android:background="@android:color/transparent"
+          android:onClick="openFirstLink"
+          android:src="@drawable/first_link" />
+
+      <ImageButton
+          android:id="@+id/imageButton4"
+          android:layout_width="600dp"
+          android:layout_height="50dp"
+          android:layout_alignParentBottom="true"
+          android:layout_alignParentRight="true"
+          android:layout_marginBottom="39dp"
+          android:background="@android:color/transparent"
+          android:onClick="openFourthLink"
+          android:src="@drawable/fourth_link" />
+
+      <ImageButton
+          android:id="@+id/imageButton3"
+          android:layout_width="600dp"
+          android:layout_height="50dp"
+          android:layout_alignBottom="@+id/imageButton4"
+          android:layout_alignParentRight="true"
+          android:layout_marginBottom="33dp"
+          android:background="@android:color/transparent"
+          android:onClick="openThirdLink"
+          android:src="@drawable/third_link" />
+   
+</RelativeLayout>

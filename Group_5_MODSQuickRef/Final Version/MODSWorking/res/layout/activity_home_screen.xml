@@ -1,0 +1,63 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="fau.edu.mods.HomeScreen"
+    tools:ignore="MergeRootFrame"
+    android:orientation="horizontal"
+    android:background="@drawable/home_background" >
+	    
+	    <ImageButton
+	        android:id="@+id/imageMainButton"
+	        android:layout_width="102dp"
+	        android:layout_height="76dp"
+	        android:layout_alignParentBottom="true"
+	        android:layout_centerHorizontal="true"
+	        android:adjustViewBounds="true"
+	        android:background="@android:color/transparent"
+	        android:onClick="openMain"
+	        android:scaleType="fitXY"
+	        android:src="@drawable/main_screen_home_button" />
+
+	    <ImageButton
+	        android:id="@+id/imageGameButton"
+	        android:layout_width="400dp"
+	        android:layout_height="200dp"
+	        android:layout_alignLeft="@+id/imageExhibitsButton"
+	        android:layout_alignParentTop="true"
+	        android:layout_marginTop="44dp"
+	        android:adjustViewBounds="true"
+	        android:background="@android:color/transparent"
+	        android:onClick="openAboutus"
+	        android:scaleType="fitXY"
+	        android:src="@drawable/aboutus_button" />
+
+	    <ImageButton
+	        android:id="@+id/imageMapsButton"
+	        android:layout_width="375dp"
+	        android:layout_height="200dp"
+	        android:layout_above="@+id/imageMainButton"
+	        android:layout_centerHorizontal="true"
+	        android:layout_marginBottom="39dp"
+	        android:adjustViewBounds="true"
+	        android:background="@android:color/transparent"
+	        android:onClick="openMaps"
+	        android:scaleType="fitXY"
+	        android:src="@drawable/maps_button" />
+
+	    <ImageButton
+	        android:id="@+id/imageExhibitsButton"
+	        android:layout_width="355dp"
+	        android:layout_height="200dp"
+	        android:layout_above="@+id/imageMapsButton"
+	        android:layout_centerHorizontal="true"
+	        android:layout_marginBottom="44dp"
+	        android:adjustViewBounds="true"
+	        android:background="@android:color/transparent"
+	        android:onClick="openExhibits"
+	        android:scaleType="fitXY"
+	        android:src="@drawable/exhibits_button" />
+    
+</RelativeLayout>
+

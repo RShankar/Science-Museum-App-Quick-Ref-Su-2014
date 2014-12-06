@@ -1,0 +1,62 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context="fau.edu.mods.Exhibits"
+    tools:ignore="MergeRootFrame" 
+    android:background="@drawable/exhibits_background">
+
+    <ImageButton
+        android:id="@+id/imageHomeButton"
+        android:layout_width="102dp"
+        android:layout_height="76dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:background="@android:color/transparent"
+        android:onClick="openHome"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/home_button" />
+
+     <ImageButton
+         android:id="@+id/imageNextButton"
+         android:layout_width="102dp"
+         android:layout_height="76dp"
+         android:layout_alignParentBottom="true"
+         android:layout_alignParentRight="true"
+         android:layout_marginRight="18dp"
+         android:adjustViewBounds="true"
+         android:background="@android:color/transparent"
+         android:onClick="openExhibits2"
+         android:scaleType="fitXY"
+         android:src="@drawable/next_button" />
+
+     <TextView
+         android:id="@+id/textView1"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_above="@+id/imageHomeButton"
+         android:layout_alignParentLeft="true"
+         android:layout_marginBottom="175dp"
+         android:gravity="center"       
+         android:text="Loggerheads were named for their relatively large heads, which support powerful jaws and enable them to feed on hard-shelled prey, such as whelks and conch. The top shell (carapace) is slightly heart-shaped and reddish-brown in adults and sub-adults, while the bottom shell (plastron) is generally a pale yellowish color. The neck and flippers are usually dull brown to reddish brown on top and medium to pale yellow on the sides and bottom."
+         android:textSize="25dp" />
+
+     <ImageView
+         android:id="@+id/imageLoggerHead"
+         android:layout_width="290dp"
+         android:layout_height="190dp"
+         android:layout_alignParentTop="true"
+         android:layout_marginRight="51dp"
+         android:layout_marginTop="17dp"
+         android:layout_toLeftOf="@+id/imageNextButton"
+         android:adjustViewBounds="true"
+         android:background="@android:color/transparent"
+         android:scaleType="fitXY"
+         android:src="@drawable/logger_head" />
+
+</RelativeLayout>
+
